@@ -8,6 +8,7 @@ import com.brewery.microserviceappsb.web.model.BeerDTO;
 
 import lombok.extern.slf4j.Slf4j;
 
+@Deprecated
 @Slf4j
 @Service
 public class BeerService implements IBeerService {
