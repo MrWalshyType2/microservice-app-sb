@@ -8,4 +8,9 @@ public interface ICustomerService {
 
 	CustomerDTO getCustomerById(UUID id);
 
+	CustomerDTO createCustomer(CustomerDTO customer);
+	
+	void updateCustomerById(UUID id, CustomerDTO customer);
+	
+	void deleteCustomerById(UUID id);
 }
