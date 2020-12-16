@@ -18,4 +18,18 @@ public class BeerService implements IBeerService {
 				      .build();
 	}
 
+	@Override
+	public BeerDTO createBeer(BeerDTO beer) {
+		return BeerDTO.builder()
+					  .id(UUID.randomUUID())
+					  .name("FalkeAle")
+					  .beerStyle("Fake Ale")
+					  .build();
+	}
+
+	@Override
+	public void updateBeerById(UUID id, BeerDTO beer) {
+		// TODO: write update code
+	}
+
 }

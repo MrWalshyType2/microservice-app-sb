@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,4 +28,5 @@ public class CustomerController {
 	public ResponseEntity<CustomerDTO> getCustomerById(@PathVariable("id") UUID id) {
 		return new ResponseEntity<CustomerDTO>(customerService.getCustomerById(id), HttpStatus.OK);
 	}
+	
 }
